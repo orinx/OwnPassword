@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <title>HMAC-MD5</title>
+  <meta charset="utf-8">
+  <script src="md5.min.js"></script>
+</head>
+<body onload="document.getElementById('out').value=''">
+  <h1>HMAC-MD5</h1>
+  <input id="in" type="password" placeholder="輸入要加密的文字"><br>
+  <input id="out" type="text" placeholder="<HMAC-MD5>"><br>
+  <script>
+    function convert() {
+    	  document.getElementById('out').value = md5(
+    	  	document.getElementById('in').value, 'ZOI3O4IZ');
+    }
+  </script>
+  <button onclick="convert()">轉換</button>
+  </form>  
+</body>
+</html>
